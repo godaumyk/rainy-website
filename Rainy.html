@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rainy — Scottish Straight Cat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="RainyStyle.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#top">Rainy<span>.</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="menu" id="menu">
+    <li><a href="#about">About Rainy</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#feeding">Snack videos</a></li>
+    <li><a href="#support">Feed Rainy</a></li>
+    <li><a href="#guestbook">Guestbook</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-photo">
+    <img src="rainy-hero.jpg" alt="Rainy the Scottish Straight cat">
+  </div>
+  <div class="hero-text">
+    <p class="eyebrow">Scottish Straight · Born 06.05.2026</p>
+    <h1>Rainy</h1>
+    <p class="hero-sub">A cat who loves a sunny spot and gets startled easily by plastic bags.</p>
+    <a class="btn btn-primary" href="#support">Buy Rainy a snack</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <h2>About Rainy</h2>
+      <div class="about-text">
+        <p>Rainy is a Scottish Straight cat, born on May 6, 2026. Unlike Scottish Folds, her ears stand up straight, but she has the same round, gentle face and easygoing personality. She loves curling up wherever the sun hits, follows her owner from room to room, and comes running the second she hears a treat bag crinkle.</p>
+        <ul class="fact-list">
+          <li><span>Birthday</span>May 6, 2026</li>
+          <li><span>Breed</span>Scottish Straight</li>
+          <li><span>Favorites</span>Lickable treats + afternoon sun</li>
+          <li><span>Dislikes</span>Plastic bag noises, bath time</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="gallery">
+    <div class="section-inner">
+      <h2>Gallery</h2>
+      <p class="section-sub">Click a photo to see it larger. Scroll or use the arrows for more.</p>
+      <div class="gallery-viewport">
+        <button class="gallery-arrow gallery-arrow-left" id="galleryPrev" aria-label="Previous photos">&#8249;</button>
+        <div class="gallery-track" id="galleryTrack">
+          <!-- Add as many gallery-item buttons as you want here — the script
+               automatically groups every 6 into one scrollable screen. -->
+          <button class="gallery-item" data-full="gallery-1.jpg"><img src="gallery-1.jpg" alt="Rainy 1"></button>
+          <button class="gallery-item" data-full="gallery-2.jpg"><img src="gallery-2.jpg" alt="Rainy 2"></button>
+          <button class="gallery-item" data-full="gallery-3.jpg"><img src="gallery-3.jpg" alt="Rainy 3"></button>
+          <button class="gallery-item" data-full="gallery-4.jpg"><img src="gallery-4.jpg" alt="Rainy 4"></button>
+          <button class="gallery-item" data-full="gallery-5.jpg"><img src="gallery-5.jpg" alt="Rainy 5"></button>
+          <button class="gallery-item" data-full="gallery-6.jpg"><img src="gallery-6.jpg" alt="Rainy 6"></button>
+          <button class="gallery-item" data-full="gallery-7.jpg"><img src="gallery-7.jpg" alt="Rainy 7"></button>
+          <button class="gallery-item" data-full="gallery-8.jpg"><img src="gallery-8.jpg" alt="Rainy 8"></button>
+          <button class="gallery-item" data-full="gallery-9.jpg"><img src="gallery-9.jpg" alt="Rainy 9"></button>
+          <button class="gallery-item" data-full="gallery-10.jpg"><img src="gallery-10.jpg" alt="Rainy 10"></button>
+          <button class="gallery-item" data-full="gallery-11.jpg"><img src="gallery-11.jpg" alt="Rainy 11"></button>
+          <button class="gallery-item" data-full="gallery-12.jpg"><img src="gallery-12.jpg" alt="Rainy 12"></button>
+        </div>
+        <button class="gallery-arrow gallery-arrow-right" id="galleryNext" aria-label="Next photos">&#8250;</button>
+      </div>
+      <div class="gallery-dots" id="galleryDots"></div>
+    </div>
+  </section>
+
+  <section class="section" id="feeding">
+    <div class="section-inner">
+      <h2>Rainy's snack videos</h2>
+      <p class="section-sub">Every time someone buys Rainy a snack through "Feed Rainy" below, her owner films the moment she eats it and posts it here.</p>
+      <div class="video-grid" id="videoGrid">
+        <div class="video-card">
+          <video controls src="rainy-eating-1.mp4"></video>
+          <p>Rainy enjoys eating</p>
+        </div>
+        <div class="video-card">
+          <video controls src="rainy-missing-u.mp4"></video>
+          <p>Rainy misses you</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="support">
+    <div class="section-inner support-grid">
+      <div>
+        <h2>Feed Rainy</h2>
+        <p>Scan the PromptPay QR code, pick an amount below, and Rainy's owner will film her eating the treat and post the clip in "Snack videos" ✨</p>
+        <div class="amount-picker" id="amountPicker">
+          <button class="amount-btn active" data-amount="50">฿50</button>
+          <button class="amount-btn" data-amount="100">฿100</button>
+          <button class="amount-btn" data-amount="200">฿200</button>
+          <button class="amount-btn amount-custom" data-amount="custom">Custom</button>
+          <input type="number" id="customAmount" class="amount-input hidden" placeholder="Baht" min="1">
+        </div>
+        <p class="qr-note">* QR code is generated from the PromptPay ID set up in this site. Please double-check the amount before transferring.</p>
+      </div>
+      <div class="qr-box">
+        <img id="qrImage" src="" alt="PromptPay QR code">
+        <p id="qrAmountLabel">฿50</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="guestbook">
+    <div class="section-inner">
+      <h2>Leave Rainy a message</h2>
+      <p class="section-sub">Send a message and Rainy's owner will pick some to post here.</p>
+      <form class="guestbook-form" id="guestbookForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <textarea name="message" rows="3" placeholder="A message for Rainy" required></textarea>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+
+      <div class="messages-wall">
+        <div class="message-card">
+          <p>“Rainy is so cute, I want to pet her 😻”</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-grid">
+      <h2>Contact Rainy's owner</h2>
+      <div class="contact-buttons">
+        <a class="btn btn-outline" href="mailto:aumyk7@gmail.com">Email</a>
+      </div>
+      <div class="line-qr-box">
+        <img src="line-qr.jpg" alt="Scan to add on LINE" width="180" height="180">
+        <p>Or scan to add on LINE</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Rainy the Scottish Straight Cat · Made by Aum</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
